@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_javahelloworld" default="compile.module.javahelloworld">
+  <dirname property="module.javahelloworld.basedir" file="${ant.file.module_javahelloworld}"/>
+  
+  <property name="module.jdk.home.javahelloworld" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.javahelloworld" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.javahelloworld" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.javahelloworld" value="-encoding UTF-8 -source 13 -target 13 ${compiler.args}"/>
+  
+  <property name="javahelloworld.output.dir" value="undefined"/>
+  <property name="javahelloworld.testoutput.dir" value="undefined"/>
+  
+  <path id="javahelloworld.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="javahelloworld.module.production.classpath">
+    <path refid="${module.jdk.classpath.javahelloworld}"/>
+  </path>
+  
+  <path id="javahelloworld.runtime.production.module.classpath"/>
+  
+  <path id="javahelloworld.module.classpath">
+    <path refid="${module.jdk.classpath.javahelloworld}"/>
+  </path>
+  
+  <path id="javahelloworld.runtime.module.classpath"/>
+  
+  
+  <patternset id="excluded.from.module.javahelloworld">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.javahelloworld">
+    <patternset refid="excluded.from.module.javahelloworld"/>
+  </patternset>
+  
+  
+  <target name="compile.module.javahelloworld" depends="compile.module.javahelloworld.production,compile.module.javahelloworld.tests" description="Compile module JavaHelloWorld"/>
+  
+  <target name="compile.module.javahelloworld.production" depends="register.custom.compilers" description="Compile module JavaHelloWorld; production classes"/>
+  
+  <target name="compile.module.javahelloworld.tests" depends="register.custom.compilers,compile.module.javahelloworld.production" description="compile module JavaHelloWorld; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.javahelloworld" description="cleanup module">
+    <delete dir="${javahelloworld.output.dir}"/>
+    <delete dir="${javahelloworld.testoutput.dir}"/>
+  </target>
+
+
+</project>
