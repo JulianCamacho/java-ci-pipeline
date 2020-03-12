@@ -1,0 +1,4 @@
+languaje:
+  java
+script:
+  - ant dist
