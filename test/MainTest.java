@@ -4,7 +4,7 @@ import src.com.company.Main;
 import static org.junit.Assert.*;
 
 public class MainTest {
-
+//Pruebas unitarias
     @Test
     public void sumaTest() {
         Main main = new Main();
