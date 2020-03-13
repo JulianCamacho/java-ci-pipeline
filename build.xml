@@ -6,7 +6,7 @@
   <property name="build" location="build"/>
   <property name="dist" location="dist"/>
   <property name="version" value="1.0"/>
-  <property name="sonar.organization" value="José Julián Camacho Hernández"/>
+  <property name="sonar.organization" value="juliancamacho341"/>
   <property name="sonar.projectKey" value="JulianCamacho_java-ci-pipeline"/>
   <property name="sonar.sources" value="."/>
   <property name="sonar.host.url" value="https://sonarcloud.io"/>
