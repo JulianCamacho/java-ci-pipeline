@@ -1,15 +1,13 @@
 dist: trusty
 os: linux
-language: java
 
 addons:
   sonarcloud:
     organization: "juliancamacho341"
     token:
-      secure: "IdVX7XAUXRShuHTbz2FSue32NtzH7xP0rrp+zGRNY46I2AlTIniGx237kX9KV+ZTcYmqtLIkrWMJDyOzNb/cKqZK6CiYsLEi2af23G4RVrOuHWhyu8Ha5dUIyNIDhkLgf1+wNhFev+G4fCLC5H6Y8bdVRTkYpOH2sTryFy6KrGxUocm5+ZXwNkA+sZTCvJuYhHtDHfdk9oDIpMmqOufhWXrwdbvwfKr8lTU+RDBnBYSEW9ZSlPdAw2znrKMZ7uuF85prY4KaoKDqNGf4jR+GPVwcdUUJJu0YIBwZi82R/3OdrKLq1S7UyvPWWcMOlIprHWf+gqlyuo5w4EFzBrTj2Q1113VTstyeo79aW/GfOcxt6hyyx4srtjryjikwapwl+8lS4RbJrt3W5ob4vN83O0g3jx1WPqqAp6dMW4JJU+rV/YpVt15XRugOFhD97lXIV3tvA1qmyM/yXIkXq+iQYKukb61QtqTvEHUbrCO4GClHgPh+CU5oun4VdulhcxfoF5G/SjI7A1jV7TAhWKjuDk2pdDteYYadn26mGImk6WPvb0P8qITXwPMMmU/ePIwvFx/uGTrMaQOjv3GOPHK/A9IQSM4hcJ2euslPmvhkbLb5LznlbcktMSSppsDJ1m0dU6MUmmmWtWUNyI2bkLgI3M3BEu3aiI92Ag46QwYze/4="
-
-
+      secure: bda3b85fc01a8ff72c51849b47481b450e8d7f35
 
 script:
   - ant dist
   - sonar-scanner
+
