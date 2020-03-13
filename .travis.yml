@@ -1,12 +1,10 @@
-dist: trusty
-os: linux
-
 addons:
   sonarcloud:
-    organization: "juliancamacho341"
+    organization: "José Julián Camacho Hernández"
     token:
-      secure: bda3b85fc01a8ff72c51849b47481b450e8d7f35
-
+      secure: "lGTwaJnZK9HG2mt2rEV4xie4SJeWm0SoEo3Hsctx204c3HuxANvuqFesDHm57EiYHSUBven3K3HkAzMTBbG9904dO0g84X4o4KIxx559VFXAoePYT9sjvK3Rem1inhYuytxI9OsxzcOnSlcOIEuatBqh4sUFHnp+GhPhWAHD8ydM18Kz6qeRfVZT4JGpBmEpXdze+gr1IMg6sOSkiTqX02O5TYFmM1I3YdocHkQ07eD8mt+tHoQjwAcf4brXdGUat1BgWc8nB7gOJ2OIRlTyl4cdYJvkZQXH8Tc9T5hxKHHQSZfq3s6Z5ghjnro1o2FkbpHVfGD+6eG/JYk84iOyJDgPfq7xmi4WVNfhmKNQNYlzXE3z2kY8rKMoPeL9VVaKWs0l66tevNCdR2S6nAJRbxvzeqXEt131+g5q3bIROUBABuKGEgrZwUGWAZe9Ri/dlm4JCfmx3EzfAUjLsUB2o5wbTTq7DauGQ2uRerNWrfmaZhglMxahf25Bi9Bhzgs4BANHIPDURoMrD5w1fXVvNeGEnldm6E5ZAPzD1Oo63QPudUFM6dAxx0Y8G8Db5otJWtM3Nl64Tke58FiRH7YSHf0/2mVrL7DeTYZWsu+Wz5IvrpyrDYrPUW0Zxp7M40GjpmZ47aY51Hy/dMB66bLAFRXNxDOMpmc7Y8Gz+oPyM2o="
+language:
+  java
 script:
   - ant dist
   - sonar-scanner

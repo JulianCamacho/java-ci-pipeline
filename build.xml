@@ -1,12 +1,12 @@
 <project name="javahelloworld" default="dist" basedir=".">
-<description>
+  <description>
     Builds a Jar file to pack this artifact
   </description>
   <property name="src" location="src"/>
   <property name="build" location="build"/>
   <property name="dist" location="dist"/>
   <property name="version" value="1.0"/>
-  <property name="sonar.organization" value="juliancamacho341"/>
+  <property name="sonar.organization" value="José Julián Camacho Hernández"/>
   <property name="sonar.projectKey" value="juliancamacho341"/>
   <property name="sonar.sources" value="."/>
   <property name="sonar.host.url" value="https://sonarcloud.io"/>
@@ -32,5 +32,4 @@
     <delete dir="${build}"/>
     <delete dir="${dist}"/>
   </target>
-
 </project>
