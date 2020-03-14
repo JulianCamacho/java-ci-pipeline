@@ -15,7 +15,7 @@ public class MainTest {
     @Test
     public void restaTest() {
         Main main = new Main();
-        assertEquals(5, main.resta(10, 5));
+        assertEquals(5, main.resta(15, 10));
         assertEquals(-8, main.resta(10, 18));
     }
 
